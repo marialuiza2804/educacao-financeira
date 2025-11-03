@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Financeira</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Importar o Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Educação Financeira</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h2>Aprenda a cuidar do seu dinheiro</h2>
+        <p>Descubra como economizar, investir e conquistar sua liberdade financeira.</p>
+        <button onclick="rolarParaCalculadora()">Começar Agora</button>
+    </section>
+
+    <section id="dicas">
+        <h2>Dicas de Educação Financeira</h2>
+        <ul class="dicas-lista">
+            <li>💰 Tenha um orçamento mensal.</li>
+            <li>📈 Invista parte da sua renda.</li>
+            <li>🧾 Evite dívidas desnecessárias.</li>
+            <li>🎯 Estabeleça metas financeiras.</li>
+        </ul>
+    </section>
+
+    <section id="calculadora">
+        <h2>Calculadora de Juros Compostos</h2>
+        <p>Descubra quanto seu dinheiro pode render ao longo do tempo.</p>
+
+        <div class="calc-container">
+            <label for="valor">Valor mensal investido (R$):</label>
+            <input type="number" id="valor" placeholder="Ex: 500">
+
+            <label for="meses">Meses:</label>
+            <input type="number" id="meses" placeholder="Ex: 12">
+
+            <label for="taxa">Taxa de juros mensal (%):</label>
+            <input type="number" id="taxa" placeholder="Ex: 0.7">
+
+            <button onclick="calcularJurosCompostos()">Calcular</button>
+
+            <p id="resultado"></p>
+
+            <canvas id="graficoInvestimento" width="400" height="200"></canvas>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>Este site foi criado para ajudar pessoas a entender melhor como administrar seu dinheiro,
+           tomar decisões inteligentes e alcançar independência financeira.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Educação Financeira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
